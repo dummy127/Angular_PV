@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './address.component.css'
 })
 export class AddressComponent {
-address:string = "this is address component"
+address:string = "this is not a address component"
 }
+
