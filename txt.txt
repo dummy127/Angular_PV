@@ -1,0 +1,8 @@
+npm install -g typescript 
+
+ng new application_name
+
+ng serve
+
+
+
