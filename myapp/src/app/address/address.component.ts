@@ -10,3 +10,4 @@ export class AddressComponent {
 address:string = "this is not a address component"
 }
 
+  

@@ -1,0 +1,20 @@
+<div class="container border border-primary">
+
+    <h1>data-binding</h1>
+
+    <ul>
+        <li>one way data-binding</li>
+        <ol>
+            <li>Interpolation</li>
+            <p>{{firstname}} {{lastname}} {{age}} {{location}} {{486*58}}</p>
+            <li>Property Binding</li>
+            <!-- <input type="text" value="{{firstname}}"> -->
+             <!-- Below is the example of property binding  -->
+             <input type="text" [placeholder]="firstname">
+             <input type="number" [value]="age">
+            <li>Event Binding</li> 
+            <button class="btn btn-danger" (dblclick)="showAlert()" >Click </button>
+        </ol>
+        <li>two way data-binding</li>
+    </ul>
+</div>
