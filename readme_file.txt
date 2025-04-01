@@ -1,10 +1,14 @@
-when you pull this project from github don't forget to run npm install on your system
+when you pull this project from github don't forget to run following commands on your system
 
 npm install -g typescript 
 
+npm install -g @angular/cli@17
+
+//To create a new application run the following command
+
 ng new application_name
 
-ng serve to run app in localhost in cmd prompt
+ng serve to run app in localhost in cmd prompt 
 
 ng generate component your_component_name //to create a new component
 
