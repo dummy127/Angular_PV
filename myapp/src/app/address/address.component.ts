@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AddressComponent {
 address:string = "this is not a address component"
+
+
 }
 
   

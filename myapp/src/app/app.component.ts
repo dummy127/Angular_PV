@@ -5,10 +5,12 @@ import { AddressComponent } from './address/address.component';
 import { ProductComponent } from './product/product.component';
 import { CategoryComponent } from './category/category.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { AdditionComponent } from './addition/addition.component';
+import { PipeComponent } from './pipe/pipe.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,AboutComponent,AddressComponent,ProductComponent,CategoryComponent,DataBindingComponent],//imports for routing purpose
+  imports: [RouterOutlet,PipeComponent,AboutComponent,AddressComponent,AdditionComponent,ProductComponent,CategoryComponent,DataBindingComponent],//imports for routing purpose
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

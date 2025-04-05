@@ -13,3 +13,6 @@ ng serve to run app in localhost in cmd prompt
 ng generate component your_component_name //to create a new component
 
 short cut for the above command is :ng g c your_component_name
+
+// to create custom pipes use the following command
+        ng g p your_pipe_name 
