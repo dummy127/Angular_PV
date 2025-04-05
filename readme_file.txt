@@ -4,6 +4,8 @@ npm install -g typescript
 
 npm install -g @angular/cli@17
 
+npm install node
+
 //To create a new application run the following command
 
 ng new application_name
