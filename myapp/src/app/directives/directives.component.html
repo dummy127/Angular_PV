@@ -1,0 +1,42 @@
+<h2>directives examples!</h2>
+
+<!-- <h2 class="text-white bg-success" *ngIf="logged_in">Logged in! congratulations! </h2>
+<h2 class="text-white bg-danger" *ngIf="!logged_in">Not Logged in! </h2> -->
+
+<h2 class="text-white bg-success" *ngIf="logged_in; else eBlock">
+  Logged in! congratulations!
+</h2>
+
+<ng-template #eBlock>
+  <h2 class="text-white bg-danger">Not Logged in!</h2>
+</ng-template>
+
+<h2 class="text-white bg-success" *ngFor="let s of animals">{{ s }}</h2>
+
+<ul class="list-group">
+  <li class="list-group-item list-group-item-danger" *ngFor="let s of subjects">
+    {{ s }}
+  </li>
+</ul>
+
+
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of students">
+       
+        <td>{{i.firstname}}</td>
+        <td>{{i.lastname}}</td>
+        <td>{{i.marks}}</td>
+      </tr>
+      
+    </tbody>
+  </table>

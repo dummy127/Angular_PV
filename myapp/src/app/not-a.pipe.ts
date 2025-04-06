@@ -6,7 +6,10 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class NotAPipe implements PipeTransform {
 
   transform(value: string, ...args: unknown[]): unknown {
-    return null;
+    if(value=="")
+      return "Text Not Available"
+    else
+      return value
   }
 
 }

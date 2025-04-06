@@ -6,6 +6,10 @@ npm install -g @angular/cli@17
 
 npm install node
 
+// to install boostrap run the following command
+
+npm i bootstrap@5.3.5
+
 //To create a new application run the following command
 
 ng new application_name
@@ -18,3 +22,4 @@ short cut for the above command is :ng g c your_component_name
 
 // to create custom pipes use the following command
         ng g p your_pipe_name 
+

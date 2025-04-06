@@ -1,12 +1,14 @@
-<h2>this is pipe examples</h2>
-<h1>{{name|uppercase}}</h1>
-<h1>{{upper|lowercase}}</h1>
-<h1>{{sen|titlecase}}</h1>
+<h1>pipe examples</h1>
+<h2>{{name|uppercase}}</h2>
+<h2>{{upper|lowercase}}</h2>
+<h2>{{sen|titlecase}}</h2>
 <p>Total: {{ amount | currency }}</p>
 <p>{{curdate|date}}</p>
 <p>{{curdate|date:"short"}}</p>
 <p>{{curdate|date:"fullDate"}}</p>
-
+<h2>{{"this is not available pipe, now available!"| notA}}</h2>
+<h2>{{""| notA}}</h2>
+<h2>{{"my name is this is string to be sliced" | slice:5:-4}}</h2>
 
 
 

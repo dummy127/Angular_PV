@@ -1,9 +1,10 @@
-import { CurrencyPipe, DatePipe, LowerCasePipe, TitleCasePipe, UpperCasePipe } from '@angular/common';
+import { CurrencyPipe, DatePipe, LowerCasePipe, SlicePipe, TitleCasePipe, UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
+import { NotAPipe } from '../not-a.pipe';
 
 @Component({
   selector: 'app-pipe',
-  imports: [UpperCasePipe,LowerCasePipe,TitleCasePipe,CurrencyPipe,DatePipe],
+  imports: [UpperCasePipe,LowerCasePipe,TitleCasePipe,CurrencyPipe,DatePipe,NotAPipe,SlicePipe],
   templateUrl: './pipe.component.html',
   styleUrl: './pipe.component.css'
 })
