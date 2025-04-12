@@ -19,9 +19,6 @@
   </li>
 </ul>
 
-
-
-
 <table class="table">
     <thead>
       <tr>
@@ -40,3 +37,26 @@
       
     </tbody>
   </table>
+
+  <!-- ngIf --><!-- ngIf --><!-- ngIf --><!-- ngIf --><!-- ngIf --><!-- ngIf -->
+   <!-- ngIf --><!-- ngIf --><!-- ngIf --><!-- ngIf --><!-- ngIf --><!-- ngIf -->
+  
+<div *ngIf="status then ifblock else elseblock"></div>
+
+<ng-template #ifblock>
+<h4>this is true status block</h4>
+</ng-template>
+
+
+<ng-template #elseblock>
+<p>this is not true status block</p>
+</ng-template>
+
+
+
+
+
+
+
+
+

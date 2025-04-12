@@ -1,0 +1,43 @@
+<div class="container m-1">
+
+
+    <div [ngSwitch]="requestStatus">
+
+        <h3 class="text-white bg-success" *ngSwitchCase="'approved'">Your request is approved</h3>
+
+        <h3 class="text-white bg-warning" *ngSwitchCase="'pending'">Your request is pending</h3>
+        
+        <h3 class="text-white bg-danger" *ngSwitchCase="'rejected'">Your request is rejected</h3>
+
+        <h3 *ngSwitchDefault="">this is default case ERROR!</h3>
+    </div>
+
+    <button class="btn btn-danger m-1" (click)="change_status('rejected')">Reject</button>
+    <button class="btn btn-warning m-1" (click)="change_status('pending')">Pending</button>
+    <button class="btn btn-success m-1" (click)="change_status('approved')">Approve</button>
+
+</div>
+
+
+
+
+<div class="container m-1">
+
+
+    <div [ngSwitch]="prolang">
+
+        <h4 class="text-black" *ngSwitchCase="'python'">Python is a versatile programming language used for a wide range of apps, including web development, data science, software development, automation, and more. It's known for its readability and ease of use, making it a popular choice for beginners and experienced developers alike.</h4>
+
+        <h4 class="text-black" *ngSwitchCase="'cpp'">C++ is used in fields such as system software, game development, embedded systems, scientific computing and high-performance applications. The C++ standard library provides a range of coding utilities and functions, making it easy to develop complex software systems.</h4>
+        
+        <h4 class="text-black" *ngSwitchCase="'java'">Java is a widely used, object-oriented programming language and software platform, known for its "write once, run anywhere" capability, meaning compiled Java code can run on any platform supporting Java without recompilation. </h4>
+
+        
+    </div>
+
+    <button class="btn btn-success m-1" (click)="change_prolang('python')">Python</button>
+    <button class="btn btn-success m-1" (click)="change_prolang('cpp')">C++</button>
+    <button class="btn btn-success m-1" (click)="change_prolang('java')">Java</button>
+
+    
+</div>

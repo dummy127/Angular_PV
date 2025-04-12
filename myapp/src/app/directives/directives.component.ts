@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 })
 export class DirectivesComponent {
 logged_in:boolean = false;
+status:boolean = true;
 
 animals:string[] = ["cat","dog","tiger","lion","python","fox"]
 
