@@ -1,0 +1,14 @@
+<p>parent-comp works!</p>
+<h2>count value {{count}}</h2>
+
+
+    <app-child-comp [data]="datafromparent" *ngIf="count<10"></app-child-comp>
+
+    <button class="btn btn-dark" (click)="changeData('button1 change')">button1</button>
+
+    <button class="btn btn-danger" (click)="changeData('button2 change')">button2</button>
+    
+    <button class="btn btn-success" (click)="changeData('button3 change')">button3</button>
+
+    <button class="btn btn-success" (click)="increase_count()">increase count</button>
+

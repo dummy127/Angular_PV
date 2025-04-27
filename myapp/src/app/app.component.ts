@@ -13,10 +13,12 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { AttributedirectivesComponent } from './attributedirectives/attributedirectives.component';
 import { ServiceexampleComponent } from './serviceexample/serviceexample.component';
+import { ParentCompComponent } from './parent-comp/parent-comp.component';
+
 
 @Component({
   selector: 'app-root',
-  imports: [ServiceexampleComponent,AttributedirectivesComponent,ParentComponent,
+  imports: [ParentCompComponent,ServiceexampleComponent,AttributedirectivesComponent,ParentComponent,
     ChildComponent,SwiexeComponent,DirectivesComponent,RouterOutlet,
     PipeComponent,AboutComponent,AddressComponent,AdditionComponent,
     ProductComponent,CategoryComponent,DataBindingComponent],//imports for routing purpose
