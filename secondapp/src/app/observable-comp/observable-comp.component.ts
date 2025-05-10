@@ -162,29 +162,34 @@ export class ObservableCompComponent {
   }
 
 //copy from github 
-data_get13(){
 
-  of(65,651,464,619,4981,9984,89)
-  .pipe(map((value) => {
-    if(value==619){
-      throw new Error("something went wrong")
-    }
-    return value
-  }),
+  data_get13()
+  {
+    let count=0;
+    of(100,200,300,400,500,600)
+    .pipe(
+      map(value=>{
+        count++;
+        if(value==300)
+        {
+          throw new Error("Something went wrong")
+        }
 
-  retry(1),
-  catchError((error)=>{
-    console.log(error.message)
-    return of ("A","B","C")
-  })
+        return value
+        
+      }),
+      retry(4),
+      catchError((error)=>{
+        console.log(error.message);
+        return of("A","B","C")
+      })
+    ).subscribe({
+      next:(value)=>console.log(value)
+    })
 
-)
-  .subscribe({
-    next: (value) => console.log(value),
-  });
+    console.log("Count:",count)
+  }
 
-//console.log(count)
-}
-
+  
 
 }

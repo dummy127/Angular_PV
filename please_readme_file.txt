@@ -28,7 +28,7 @@ ng g p your_pipe_name
 
 //now to create a service in angular project you need to run the following command
 ng g s your_service_name
-ng g s service_name/users //to create a service in a particular folder
+ng g s folder_name/service_name //to create a service in a particular folder
 
 
 
