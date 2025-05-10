@@ -1,22 +1,22 @@
 import { Component } from '@angular/core';
-import { FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { UsersService } from '../data/users.service';
+
 @Component({
-  selector: 'app-comp-a',
+  selector: 'app-a',
   imports: [FormsModule],
-  templateUrl: './comp-a.component.html',
-  styleUrl: './comp-a.component.css'
+  templateUrl: './a.component.html',
+  styleUrl: './a.component.css'
 })
-export class CompAComponent {
-
-  enteredData:string = ""
-
-  // constructor (private dataService:DataService)
-  // {
-
-  // }
+export class AComponent {
+  enteredData:string="";
+  constructor(private userService:UsersService)
+  {
+     
+  }
 
   onBtnClick()
   {
-    //this.dataService.emitData(this.enteredData)
+    this.userService.emitData(this.enteredData);
   }
 }
