@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { UsersService } from '../data/users.service';
 
 @Component({
-  selector: 'app-b',
+  selector: 'app-comp-b',
   imports: [],
-  templateUrl: './b.component.html',
-  styleUrl: './b.component.css'
+  templateUrl: './comp-b.component.html',
+  styleUrl: './comp-b.component.css'
 })
 export class CompBComponent {
   receivedData:string="XYZ";
