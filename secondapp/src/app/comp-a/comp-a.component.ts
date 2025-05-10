@@ -3,10 +3,10 @@ import { FormsModule } from '@angular/forms';
 import { UsersService } from '../data/users.service';
 
 @Component({
-  selector: 'app-a',
+  selector: 'app-comp-a',
   imports: [FormsModule],
-  templateUrl: './a.component.html',
-  styleUrl: './a.component.css'
+  templateUrl: './comp-a.component.html',
+  styleUrl: './comp-a.component.css'
 })
 export class CompAComponent {
   enteredData:string="";
