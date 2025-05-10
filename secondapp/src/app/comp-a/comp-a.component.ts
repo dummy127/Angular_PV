@@ -8,7 +8,7 @@ import { UsersService } from '../data/users.service';
   templateUrl: './a.component.html',
   styleUrl: './a.component.css'
 })
-export class AComponent {
+export class CompAComponent {
   enteredData:string="";
   constructor(private userService:UsersService)
   {
