@@ -13,12 +13,12 @@ export class ApiService {
 
 getPost():any{
 
- let post:any[] = []
+ //let post:any[] = []
  let response = this.httpClient.get("https://jsonplaceholder.typicode.com/posts")
 
-  response.subscribe((value)=> post = value)
+  response.subscribe((value)=> console.log(value))
 
-  return post
+  //return post
 
 }
 
