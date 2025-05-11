@@ -13,14 +13,37 @@ export class ApiService {
 
 getPost():any{
 
- //let post:any[] = []
+ let post
  let response = this.httpClient.get("https://jsonplaceholder.typicode.com/posts")
 
-  response.subscribe((value)=> console.log(value))
+  response.subscribe((value)=> post = value)
 
-  //return post
+  return post
 
 }
 
+createPost(postData:any){
+
+return this.httpClient.post("https://jsonplaceholder.typicode.com/posts",postData)
+
+}
+
+updatePost(updateData:any,id:any){
+
+return this.httpClient.put(`https://jsonplaceholder.typicode.com/posts/${id}`,updateData)
+
+}
+
+deletePost(id:any){
+
+return this.httpClient.delete(`https://jsonplaceholder.typicode.com/posts/${id}`)
+
+}
+
+getPostbyid(id:any){
+
+return this.httpClient.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+
+}
 
 }

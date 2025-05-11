@@ -23,6 +23,9 @@ ng generate component your_component_name
 //short cut for the above command is 
 ng g c your_component_name
 
+//incase you dont want to generate teting files write the following command
+ng g c your_component_name --skip-tests 
+
 // to create custom pipes use the following command
 ng g p your_pipe_name 
 
